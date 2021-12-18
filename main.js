@@ -1,20 +1,18 @@
 // primera parte del desafío
 let numero1 = parseInt(prompt("Ingrese un número"));
 let acumulador = numero1;
-let numero2 = parseInt (1);
 
-while (numero2 > 0){
-
-    numero2 = (prompt("Ingrese otro número ó 0 (cero) para salir"));
+do{
+    var numero2 = parseInt(prompt("Ingrese otro número ó 0 (cero) para salir")); // usé var, porque con let no respondía el while
 
     acumulador = (acumulador + numero2);
 
     alert("La suma de los números ingresados es: " + acumulador);
 
-}
+}   while (numero2 > 0);
+    
 
 // segunda parte del desafío
-
 let nombre = prompt("Ingrese su nombre o ESC para salir");
 let orden = 1;
 
@@ -29,11 +27,10 @@ while (nombre != "ESC"){
 }
 
 // tercera parte del desafío
-
-let num = parseInt(prompt("Ingrese un número"));
+let num = (prompt("Ingrese un número"));
 
 for (let i = 1; i <= num; i ++){
 
-    alert("Hola");
+    alert("Hola " + i + " / " + num);
    
 }
