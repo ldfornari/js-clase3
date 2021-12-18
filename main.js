@@ -1,11 +1,11 @@
 // primera parte del desafío
 let numero1 = parseInt(prompt("Ingrese un número"));
-let acumulador = parseInt(numero1);
+let acumulador = numero1;
 let numero2 = parseInt (1);
 
 while (numero2 > 0){
 
-    numero2 = parseInt(prompt("Ingrese otro número ó 0 (cero) para salir"));
+    numero2 = (prompt("Ingrese otro número ó 0 (cero) para salir"));
 
     acumulador = (acumulador + numero2);
 
@@ -15,8 +15,8 @@ while (numero2 > 0){
 
 // segunda parte del desafío
 
-let nombre = prompt("Ingrese su nombre o ESC para salir")
-let orden = parseInt (1)
+let nombre = prompt("Ingrese su nombre o ESC para salir");
+let orden = 1;
 
 while (nombre != "ESC"){
     
@@ -24,7 +24,7 @@ while (nombre != "ESC"){
 
     orden = orden + 1;
     
-    nombre = prompt("Ingrese su nombre o ESC para salir")
+    nombre = prompt("Ingrese su nombre o ESC para salir");
 
 }
 
